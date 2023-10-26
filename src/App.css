@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9hC21BrW-wTqfAO7vu0W-b4CZl-Qs4HcUuQ&usqp=CAU');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: relative;
+}
+.top-section{
+  position: absolute;
+  top: 8%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+  gap: 1rem;
+  width: 100%;
+}
+.top-section-icon{
+  color: white;
+  font-size: 24px;
+}
+.top-section-icon:hover{
+  cursor: pointer;
+}
+a{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.content-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-tile{
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
 }
+.search-con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 28px;
+  padding: 0.8rem 2rem;
+  width: 500px;
+}
+.search-con input{
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  width: 100%;
+}
+.search-bar-icon{
+  font-size: 24px;
+}
+.items-con{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.item{
+  margin: 1rem 1.5rem;
+}
+.item:hover{
+  cursor: pointer;
+}
+.item p{
+  color: white;
+  line-height: 0;
+}
+.item-img{
+  font-size: 32px;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 100%;
+} 
